@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useParams } from "react-router-dom";
 
 const skillsArr = [
   {
@@ -64,6 +65,8 @@ const skillsArr = [
 ];
 
 const Skills = () => {
+  const { categoryId } = useParams();
+  console.log({ categoryId });
   return (
     <div className="flex justify-center flex-col items-center md:mt-15 mt-10 mb-10">
       <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-10">

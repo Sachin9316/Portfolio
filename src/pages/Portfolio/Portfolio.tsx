@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useParams } from "react-router-dom";
 
 const projects = [
   {
@@ -38,6 +39,8 @@ const cardVariant = {
 };
 
 const Portfolio = () => {
+  const { id } = useParams();
+  console.log({ id });
   return (
     <section id="portfolio" className="bg-gradient-to-br md:mt-15 my-8">
       <div className="max-w-6xl mx-auto">
